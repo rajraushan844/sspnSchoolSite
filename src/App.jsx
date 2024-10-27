@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from './components/Header/Navbar';
 import Footer from './components/Footer/Footer';
-import ImageModal from './components/Cards/ImgModal';
+
 
 import './index.css';
 import { Outlet } from 'react-router-dom';

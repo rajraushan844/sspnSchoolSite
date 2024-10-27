@@ -22,26 +22,26 @@ const Dropdown = ({ label, menuItems }) => {
 
   return (
     <div
-      className="relative z-50"
+      className="inline-block text-left z-10"
       onMouseEnter={openDropdown} // Open dropdown when mouse enters
       onMouseLeave={closeDropdown} // Close dropdown with delay when mouse leaves
     >
       {/* Dropdown label button */}
       <button
-        className="block py-2 z-50 pr-4 pl-3 text-white hover:text-yellow-400 lg:hover:bg-transparent lg:border-0 lg:p-0 duration-200"
+        className="block py-2 pr-4 pl-3 text-white hover:text-yellow-400 lg:hover:bg-transparent lg:border-0 lg:p-0 duration-200"
       >
         {label}
       </button>
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute left-0 mt-2 bg-yellow-400 text-white shadow-md z-20">
+        <div className="absolute left-0 mt-2 bg-yellow-400 text-white shadow-md z-10">
           <ul className="space-y-1">
             {menuItems.map((item) => (
               <li key={item.label}>
                 <NavLink
                   to={item.path}
-                  className="block px-4 py-2 hover:bg-yellow-600 text-red-600"
+                  className="block px-4 py-2 hover:bg-yellow-600 text-red-600 z-90"
                   onClick={() => !isOpen && setIsOpen(false)} // Close dropdown immediately when item clicked
                 >
                   {item.label}

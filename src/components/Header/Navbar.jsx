@@ -106,7 +106,7 @@ function Navbar() {
             </li>
 
             <li className="group relative">
-            <NavLink to="/cadet-corner" className={({ isActive }) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-400" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-yellow-400 lg:p-0`}>
+            <NavLink to="" className={({ isActive }) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-400" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-yellow-400 lg:p-0`}>
             <DropdownButton
                 label="Cadet's Corner"
                 menuItems={[
@@ -125,13 +125,13 @@ function Navbar() {
             </li>
 
             <li className="group relative">
-              <NavLink to="/Publications" className={({ isActive }) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-400" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-yellow-400 lg:p-0`}>
+              <NavLink to="" className={({ isActive }) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-400" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-yellow-400 lg:p-0`}>
               <DropdownButton
                 label="Publications"
                 menuItems={[
-                    { label: "Annual Magazine", path: "/officer" },
-                    { label: "Cadet's Magazine", path: "/officer" },
-                    { label: "School Clander", path: "/Admin" },
+                    { label: "Annual Magazine", path: "/publications/anualmagzine" },
+                    { label: "Cadet's Magazine", path: "/publications/cadetsmagzine" },
+                    { label: "School Clander", path: "/publications/schoolcalendar" },
                 ]}
               />
               </NavLink>

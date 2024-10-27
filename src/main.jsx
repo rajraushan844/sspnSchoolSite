@@ -16,6 +16,7 @@ import Loading from "./components/Page404/Loading";
 
 
 import AlumniForm from "./components/CadetsCorner/AlumniForm.jsx";
+import AnualMagzine from "./components/Publications/AnualMagzine.jsx";
 
 
 import MissionVision from "./components/AboutUs/MissionVision.jsx";
@@ -41,6 +42,9 @@ import Houses from "./components/Acadmics/Houses.jsx";
 import Ncc from "./components/Acadmics/Ncc.jsx";
 import Club from "./components/Acadmics/Club.jsx";
 import SportsActivicty from "./components/Acadmics/SportsActivicty.jsx";
+import SchoolCalendar from "./components/Publications/SchoolClender.jsx";
+import CadetsMagzine from "./components/Publications/CadetsMagzine.jsx";
+import ContactUs from "./components/ContactUs/ContactUs.jsx";
 
 
 const router = createBrowserRouter(
@@ -55,11 +59,12 @@ const router = createBrowserRouter(
       <Route path="/loader" element={<Loading />} />
       <Route path="/officer" element={<Officer />} />
       
+      
       <Route path="/teachers" element={<Teachers />} />
       <Route path="/sports" element={<Sports />} />
       <Route path="/lba" element={<LBA />} />
       <Route path="/gallery" element={<SimpleGallery />} />
-      
+       
       
 
       <Route path="/about" element={<Outlet />}>
@@ -82,9 +87,7 @@ const router = createBrowserRouter(
 
       <Route path="/cadet-corner" element={<Outlet />} >
          <Route path="alumniform" element={<AlumniForm />} />
-         <Route path="club" element={<Club />} />
-         <Route path="ncc" element={<Ncc />} />
-         <Route path="sports-activity" element={<SportsActivicty />} />
+         
       </Route>
 
 
@@ -97,6 +100,15 @@ const router = createBrowserRouter(
       
       
       </Route>
+
+      <Route  path="/publications" element={<Outlet />}>
+         <Route path="anualmagzine" element={<AnualMagzine />} />
+         <Route path="schoolcalendar" element={<SchoolCalendar />} />
+         <Route path="cadetsmagzine" element={<CadetsMagzine />} />
+      </Route>
+
+
+      <Route path="/contactus" element={<ContactUs />} />
 
 
 
