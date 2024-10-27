@@ -1,6 +1,6 @@
 import React from "react";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumb";
-import { Outlet } from "react-router-dom";
+
 import Title from "../Cards/Title";
 
 export default function About() {
@@ -38,7 +38,7 @@ export default function About() {
             disciplined and comprehensive education system that blends
             academics, physical fitness, and personality development.
             <br />
-            <br />
+         
             Our mission is to develop responsible and patriotic citizens who can
             serve the nation with dedication and integrity, both in military and
             civilian roles. The school follows the Central Board of Secondary
@@ -46,48 +46,48 @@ export default function About() {
             that emphasizes academic excellence, leadership qualities, physical
             fitness, and moral values.
             <br />
-            <br />
+            
             <strong>Key Features:</strong>
             <br />
-            <br />
+         
             <strong>Holistic Education:</strong> Sainik School Punglwa provides
             a balanced curriculum, integrating academics with co-curricular and
             extra-curricular activities such as sports, leadership camps, and
             cultural events.
             <br />
-            <br />
+           
             <strong>Military Training:</strong> Cadets receive preliminary
             military training, including drills, shooting, obstacle courses, and
             other physical endurance exercises to prepare them for a career in
             the armed forces.
             <br />
-            <br />
+         
             <strong>State-of-the-Art Facilities:</strong> The school offers
             modern infrastructure, including fully-equipped classrooms, a
             well-stocked library, science and computer labs, and specialized
             sports facilities for games like football, basketball, athletics,
             and more.
             <br />
-            <br />
+         
             <strong>Dedicated Faculty:</strong> The school boasts a team of
             highly qualified and experienced teachers who guide students in
             academics and other spheres of development. Regular workshops,
             seminars, and interactions with defense personnel enhance the
             students' understanding of military and defense-related careers.
             <br />
-            <br />
+          
             <strong>Discipline & Values:</strong> A strong emphasis on
             discipline, character-building, and leadership sets Sainik School
             Punglwa apart. Students are trained to live with integrity,
             responsibility, and a spirit of service.
             <br />
-            <br />
+         
             <strong>Scholarships & Support:</strong> Various scholarship schemes
             are available to help students from different backgrounds. The
             school ensures that talent, not financial background, is the
             deciding factor for those aspiring to serve the nation.
             <br />
-            <br />
+         
             Sainik School Punglwa is not just an educational institution; it is
             a stepping stone for young minds with the dream of serving their
             motherland, instilling in them the values of duty, honor, and

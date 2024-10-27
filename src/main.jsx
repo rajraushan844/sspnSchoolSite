@@ -15,6 +15,9 @@ import PageNotFound from "./components/Page404/PageNotFound";
 import Loading from "./components/Page404/Loading";
 
 
+import AlumniForm from "./components/CadetsCorner/AlumniForm.jsx";
+
+
 import MissionVision from "./components/AboutUs/MissionVision.jsx";
 import Hero from "./components/Acadmics/Hero.jsx";
 import ImageModal from "./components/Cards/ImgModal.jsx";
@@ -46,6 +49,7 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
 
       <Route path="pdesk" element={<Pdesk />} />
+      <Route path="/AlumniForm" element={<AlumniForm />} />
 
       <Route path="*" element={<PageNotFound />} />
       <Route path="/loader" element={<Loading />} />
@@ -75,6 +79,14 @@ const router = createBrowserRouter(
         <Route path="generalstaff" element={<General/>} />
         <Route path="womencell" element={<WomenCell />} />
       </Route>
+
+      <Route path="/cadet-corner" element={<Outlet />} >
+         <Route path="alumniform" element={<AlumniForm />} />
+         <Route path="club" element={<Club />} />
+         <Route path="ncc" element={<Ncc />} />
+         <Route path="sports-activity" element={<SportsActivicty />} />
+      </Route>
+
 
       <Route path="/academic" element={<Outlet />} >
          <Route index element={<Hero />} />
